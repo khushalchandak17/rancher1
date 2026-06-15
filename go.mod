@@ -53,6 +53,9 @@ replace (
 	k8s.io/pod-security-admission => k8s.io/pod-security-admission v0.35.4
 	k8s.io/sample-apiserver => k8s.io/sample-apiserver v0.35.4
 	oras.land/oras-go => oras.land/oras-go v1.2.2 // for docker 20.10.x compatibility
+	// local fix: issue-11653 cache lock + context propagation
+	github.com/rancher/steve => ../steve
+	github.com/rancher/wrangler/v3 => ../wrangler
 )
 
 require github.com/rancher/rancher/pkg/apis v0.0.0
